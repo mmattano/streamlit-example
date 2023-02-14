@@ -27,72 +27,72 @@ st.progress(ratio)
 
 st.write('Days to go: ', days_to_go)
 
-#if ratio < 0.1:
-#    st.write('Settling in')
+if ratio < 0.1:
+    st.write('Settling in')
 #    streamlit_extras.let_it_rain.rain(
 #        emoji="😮‍💨",
 #        font_size=54,
 #        falling_speed=5,
 #        animation_length="infinite",
 #    )
-#elif ratio >= 0.1 and ratio < 0.2:
-#    st.write('Still a while to go')
+elif ratio >= 0.1 and ratio < 0.2:
+    st.write('Still a while to go')
 #    let_it_rain.rain(
 #        emoji="😢",
 #        font_size=54,
 #        falling_speed=5,
 #        animation_length="infinite",
 #    )
-#elif ratio >= 0.2 and ratio < 0.3:
-#    st.write('Time is passing')
+elif ratio >= 0.2 and ratio < 0.3:
+    st.write('Time is passing')
 #    let_it_rain.rain(
 #        emoji="😐",
 #        font_size=54,
 #        falling_speed=5,
 #        animation_length="infinite",
 #    )
-#elif ratio >= 0.3 and ratio < 0.45:
-#    st.write('Still a while to go')
+elif ratio >= 0.3 and ratio < 0.45:
+    st.write('Still a while to go')
 #    let_it_rain.rain(
 #        emoji="🫠",
 #        font_size=54,
 #        falling_speed=5,
 #        animation_lengt="infinite",
 #    )
-#elif ratio >= 0.45 and ratio < 0.55:
-#    st.write('Halfway there!')
+elif ratio >= 0.45 and ratio < 0.55:
+    st.write('Halfway there!')
 #    let_it_rain.rain(
 #        emoji="🎈",
 #        font_size=54,
 #        falling_speed=5,
 #        animation_length="infinite",
 #    )
-#elif ratio >= 0.55 and ratio < 0.70:
-#    st.write('Getting closer!')
+elif ratio >= 0.55 and ratio < 0.70:
+    st.write('Getting closer!')
 #    let_it_rain.rain(
 #        emoji="🌈",
 #        font_size=54,
 #        falling_speed=5,
 #        animation_length="infinite",
 #    )
-#elif ratio >= 0.7 and ratio < 0.8:
-#    st.write('Almost there!')
+elif ratio >= 0.7 and ratio < 0.8:
+    st.write('Almost there!')
 #    let_it_rain.rain(
 #        emoji="🤩",
 #        font_size=54,
 #        falling_speed=5,
 #        animation_length="infinite",
 #    )
-#elif ratio >= 0.9 and ratio < 1:
-#    st.write("I'm excited to see you soon!")
+elif ratio >= 0.9 and ratio < 1:
+    st.write("I'm excited to see you soon!")
 #    let_it_rain.rain(
 #        emoji="🥰",
 #        font_size=54,
 #        falling_speed=5,
 #        animation_length="infinite",
 #    )
-#elif ratio >= 1:
-#    st.write('Yeeeeeeeey you are here!')
+elif ratio >= 1:
+    st.write('Yeeeeeeeey you are here!')
 #    let_it_rain.rain(
 #        emoji="💖",
 #        font_size=54,
