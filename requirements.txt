@@ -1,2 +1,2 @@
-streamlit-extras==0.2.6
+streamlit-extras == 0.2.5
 streamlit
