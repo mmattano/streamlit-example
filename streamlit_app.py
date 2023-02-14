@@ -1,10 +1,6 @@
 from collections import namedtuple
-import altair as alt
-import math
-import pandas as pd
 import streamlit as st
 from datetime import datetime
-from datetime import date
 from streamlit_extras.let_it_rain import rain
 
 """
