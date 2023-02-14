@@ -1,7 +1,7 @@
 from collections import namedtuple
 import streamlit as st
 from datetime import datetime
-from streamlit_extras import let_it_rain
+#from streamlit_extras import let_it_rain
 
 """
 # Welcome to Streamlit!
