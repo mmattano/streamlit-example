@@ -1,7 +1,8 @@
 from collections import namedtuple
 import streamlit as st
 from datetime import datetime
-#from streamlit_extras import let_it_rain
+import streamlit_extras
+from streamlit_extras import let_it_rain
 
 
 st.title('Welcome to the "Matthias loves and misses Holda very much" app!')
