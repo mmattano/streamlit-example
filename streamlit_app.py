@@ -1,7 +1,7 @@
 from collections import namedtuple
 import streamlit as st
 from datetime import datetime
-import streamlit_extras
+#import streamlit_extras
 #from streamlit_extras import let_it_rain
 
 
@@ -27,14 +27,14 @@ st.progress(ratio)
 
 st.write('Days to go: ', days_to_go)
 
-if ratio < 0.1:
-    st.write('Settling in')
-    streamlit_extras.let_it_rain.rain(
-        emoji="😮‍💨",
-        font_size=54,
-        falling_speed=5,
-        animation_length="infinite",
-    )
+#if ratio < 0.1:
+#    st.write('Settling in')
+#    streamlit_extras.let_it_rain.rain(
+#        emoji="😮‍💨",
+#        font_size=54,
+#        falling_speed=5,
+#        animation_length="infinite",
+#    )
 #elif ratio >= 0.1 and ratio < 0.2:
 #    st.write('Still a while to go')
 #    let_it_rain.rain(
