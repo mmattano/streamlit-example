@@ -22,50 +22,50 @@ F = TypeVar("F", bound=Callable[..., Any])
 #   3) as a function: extra(my_function)
 
 
-@overload
-def extra(
-    func: F,
-) -> F:
-    ...
+#@overload
+#def extra(
+#    func: F,
+#) -> F:
+#    ...
+#
+#
+#@overload
+#def extra(
+#    func: None = None,
+#) -> Callable[[F], F]:
+#    ...
+#
+#
+#def extra(
+#    func: Optional[F] = None,
+#) -> Union[Callable[[F], F], F]:
+#
+#    if func:
+#
+#        filename = inspect.stack()[1].filename
+#        submodule = Path(filename).parent.name
+#        extra_name = "streamlit_extras." + submodule
+#        module = import_module(extra_name)
+#
+#        if hasattr(module, "__funcs__"):
+#            module.__funcs__ += [func]  # type: ignore
+#        else:
+#            module.__funcs__ = [func]  # type: ignore
+#
+#        profiling_name = f"{submodule}.{func.__name__}"
+#        try:
+#            return _gather_metrics(name=profiling_name, func=func)
+#        except TypeError:
+#            # Don't fail on streamlit==1.13.0, which only expects a callable
+#            pass
+#
+#    def wrapper(f: F) -> F:
+#        return f
+#
+#    return wrapper
 
 
-@overload
-def extra(
-    func: None = None,
-) -> Callable[[F], F]:
-    ...
-
-
-def extra(
-    func: Optional[F] = None,
-) -> Union[Callable[[F], F], F]:
-
-    if func:
-
-        filename = inspect.stack()[1].filename
-        submodule = Path(filename).parent.name
-        extra_name = "streamlit_extras." + submodule
-        module = import_module(extra_name)
-
-        if hasattr(module, "__funcs__"):
-            module.__funcs__ += [func]  # type: ignore
-        else:
-            module.__funcs__ = [func]  # type: ignore
-
-        profiling_name = f"{submodule}.{func.__name__}"
-        try:
-            return _gather_metrics(name=profiling_name, func=func)
-        except TypeError:
-            # Don't fail on streamlit==1.13.0, which only expects a callable
-            pass
-
-    def wrapper(f: F) -> F:
-        return f
-
-    return wrapper
-
-
-@extra
+#@extra
 def rain(
     emoji: str,
     font_size: int = 64,
