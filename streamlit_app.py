@@ -53,7 +53,7 @@ elif ratio >= 0.2 and ratio < 0.3:
 elif ratio >= 0.3 and ratio < 0.45:
     st.write('Still a while to go')
     rain(
-        emoji="🫠",
+        emoji="😐",
         font_size=54,
         falling_speed=5,
         animation_lengt="infinite",
