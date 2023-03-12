@@ -42,7 +42,7 @@ elif ratio >= 0.1 and ratio < 0.2:
         falling_speed=5,
         animation_length="infinite",
     )
-elif ratio >= 0.2 and ratio < 0.45:
+elif ratio >= 0.2 and ratio < 0.3:
     st.write('Time is passing')
     rain(
         emoji="😐",
@@ -50,14 +50,14 @@ elif ratio >= 0.2 and ratio < 0.45:
         falling_speed=5,
         animation_length="infinite",
     )
-#elif ratio >= 0.3 and ratio < 0.45:
-#    st.write('Still a while to go')
-#    rain(
-#        emoji="😐",
-#        font_size=54,
-#        falling_speed=5,
-#        animation_lengt="infinite",
-#    )
+elif ratio >= 0.3 and ratio < 0.45:
+    st.write('Still a while to go')
+    rain(
+        emoji="🫠",
+        font_size=54,
+        falling_speed=5,
+        animation_length="infinite",
+    )
 elif ratio >= 0.45 and ratio < 0.55:
     st.write('Halfway there!')
     rain(
