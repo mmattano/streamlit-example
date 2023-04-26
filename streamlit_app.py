@@ -82,6 +82,14 @@ elif ratio >= 0.7 and ratio < 0.8:
         falling_speed=5,
         animation_length="infinite",
     )
+elif ratio >= 0.8 and ratio < 0.9:
+    st.write('Aaaaaaaaaaaaaah!!!! I can see you!')
+    rain(
+        emoji="🌷",
+        font_size=54,
+        falling_speed=5,
+        animation_length="infinite",
+    )
 elif ratio >= 0.9 and ratio < 1:
     st.write("I'm excited to see you soon!")
     rain(
